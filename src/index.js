@@ -1,9 +1,9 @@
 module.exports = function solveEquation(equation) {
   var a, b, c, D, x1, x2;
-  var arrSplited = equation.split(' ');
-  a = Number(arrSplited[0]);
-  b = Number(arrSplited[3]+arrSplited[4]);
-  c = Number(arrSplited[7]+arrSplited[8]);
+  var arrSplitted = equation.split(' ');
+  a = Number(arrSplitted[0]);
+  b = Number(arrSplitted[3]+arrSplitted[4]);
+  c = Number(arrSplitted[7]+arrSplitted[8]);
   var arrResult = [];
   if (a!=0){
     D = Math.pow(b,2) - (4*a*c);
@@ -17,6 +17,6 @@ module.exports = function solveEquation(equation) {
     return arrResult;
   }
   else {
-    return 0;
+    return 1;
   }
-}
+};
